@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane fx:id="grade6root" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep11.Grade6SceneController">
+   <children>
+      <TableView fx:id="tblStudents" layoutX="50.0" layoutY="132.0" prefHeight="216.0" prefWidth="506.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Number" />
+          <TableColumn prefWidth="300.0" text="Name" />
+            <TableColumn prefWidth="130.0" text="Contact Number" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtNumber" layoutX="174.0" layoutY="22.0" />
+      <TextField fx:id="txtName" layoutX="174.0" layoutY="56.0" />
+      <Label layoutX="32.0" layoutY="26.0" text="Number :" />
+      <Label layoutX="31.0" layoutY="60.0" text="Name :" />
+      <Label layoutX="31.0" layoutY="93.0" text="Contact Number :" />
+      <TextField fx:id="txtNumber" layoutX="174.0" layoutY="90.0" />
+      <Button fx:id="btnSave" layoutX="503.0" layoutY="97.0" mnemonicParsing="false" onAction="#btnSaveOnAction" text="SAVE" />
+      <Button fx:id="btnRemove" layoutX="482.0" layoutY="362.0" mnemonicParsing="false" onAction="#btnRemoveOnAction" text="REMOVE" />
+      <Button fx:id="btnNumber" layoutX="408.0" layoutY="17.0" mnemonicParsing="false" onAction="#btnNumberOnAction" text="ADD NEW STUDENT" />
+   </children>
+</AnchorPane>
